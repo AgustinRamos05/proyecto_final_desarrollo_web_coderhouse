@@ -1,0 +1,159 @@
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  .navbar {
+    padding: 0;
+    margin: 0;
+    .navbar-one {
+      background-color: white;
+      width: 100%;
+      padding: 0 1em;
+      a {
+        color: black;
+        font-size: 2.5em;
+        width: 15vw;
+        text-align: center;
+        font-style: italic;
+      }
+      form {
+        width: 55vw;
+        text-align: center;
+      }
+      input {
+        border-radius: 1em;
+        width: 100%;
+        background-color: rgb(235, 235, 235);
+        margin: 0;
+        &:focus {
+          background-color: rgb(235, 235, 235);
+          border: 1px solid rgb(71, 71, 71);
+          box-shadow: none;
+        }
+      }
+      .icon-nav {
+        width: 15vw;
+        text-align: end;
+        padding-right: 1em;
+        i {
+          color: rgb(49, 49, 49);
+          padding: 0 0.6em;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  .navbar-expand-lg {
+    .navbar-collapse {
+      justify-content: center;
+      background-color: white;
+    }
+  }
+}
+
+/* Estrategia Mobile Last */
+
+@media (max-width: 991px) {
+  /* Tamaño mediano */
+
+  .navbar {
+    .conteiner {
+      background-color: white;
+    }
+    .conteiner-fluid {
+      background-color: white;
+      .navbar-toggler {
+        border: white;
+        &:focus {
+          border: white;
+          box-shadow: none;
+        }
+      }
+    }
+    .container-lg {
+      background-color: white;
+    }
+    .container-md {
+      background-color: white;
+    }
+    .container-sm {
+      background-color: white;
+    }
+    .container-xl {
+      background-color: white;
+    }
+    .container-xxl {
+      background-color: white;
+    }
+  }
+
+  .navbar {
+    .navbar-one {
+      form {
+        width: 50vw;
+      }
+      .icon-nav {
+        width: 20vw;
+        i {
+          padding: 0 0.4em;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* Tamaño Mediano: Tablet */
+
+  .navbar-one {
+    a {
+      width: 20vw;
+      font-size: 2.2rem;
+    }
+    form {
+      width: 45vw;
+    }
+    .icon-nav {
+      width: 25vw;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  /* Tamaño Chico */
+
+  .navbar-one {
+    padding: 0 0.4em;
+    a {
+      width: 20vw;
+      font-size: 2rem;
+    }
+    form {
+      width: 38vw;
+    }
+    .icon-nav {
+      width: 27vw;
+      i {
+        padding: 0 0.4em;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  /* Tamaño Extra Chico */
+
+  .navbar-one {
+    a {
+      width: 15vw;
+      font-size: 1.5rem;
+    }
+    .icon-nav {
+      width: 30vw;
+    }
+  }
+}
