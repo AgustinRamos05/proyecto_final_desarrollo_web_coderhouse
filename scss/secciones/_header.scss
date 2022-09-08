@@ -59,37 +59,6 @@
   /* Tamaño mediano */
 
   .navbar {
-    .conteiner {
-      background-color: white;
-    }
-    .conteiner-fluid {
-      background-color: white;
-      .navbar-toggler {
-        border: white;
-        &:focus {
-          border: white;
-          box-shadow: none;
-        }
-      }
-    }
-    .container-lg {
-      background-color: white;
-    }
-    .container-md {
-      background-color: white;
-    }
-    .container-sm {
-      background-color: white;
-    }
-    .container-xl {
-      background-color: white;
-    }
-    .container-xxl {
-      background-color: white;
-    }
-  }
-
-  .navbar {
     .navbar-one {
       form {
         width: 50vw;
@@ -99,6 +68,15 @@
         i {
           padding: 0 0.4em;
           font-size: 1.2em;
+        }
+      }
+    }
+    .navbar-two {
+      background-color: white;
+      .navbar-toggler {
+        border: white;
+        &:focus {
+          box-shadow: none;
         }
       }
     }

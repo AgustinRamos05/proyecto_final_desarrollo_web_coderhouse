@@ -56,32 +56,19 @@ body {
 /* Estrategia Mobile Last */
 @media (max-width: 991px) {
   /* Tamaño mediano */
-  .navbar .conteiner {
-    background-color: white; }
-  .navbar .conteiner-fluid {
-    background-color: white; }
-    .navbar .conteiner-fluid .navbar-toggler {
-      border: white; }
-      .navbar .conteiner-fluid .navbar-toggler:focus {
-        border: white;
-        box-shadow: none; }
-  .navbar .container-lg {
-    background-color: white; }
-  .navbar .container-md {
-    background-color: white; }
-  .navbar .container-sm {
-    background-color: white; }
-  .navbar .container-xl {
-    background-color: white; }
-  .navbar .container-xxl {
-    background-color: white; }
   .navbar .navbar-one form {
     width: 50vw; }
   .navbar .navbar-one .icon-nav {
     width: 20vw; }
     .navbar .navbar-one .icon-nav i {
       padding: 0 0.4em;
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+  .navbar .navbar-two {
+    background-color: white; }
+    .navbar .navbar-two .navbar-toggler {
+      border: white; }
+      .navbar .navbar-two .navbar-toggler:focus {
+        box-shadow: none; } }
 
 @media (max-width: 767px) {
   /* Tamaño Mediano: Tablet */
