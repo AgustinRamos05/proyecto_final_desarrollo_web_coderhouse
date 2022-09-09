@@ -1,0 +1,9 @@
+Keywords
+-index: Style, indumentaria, urbano, accesorios, moda.
+-accesorios: riñonera, mochila, bolso, gorro, medias.
+-hombre: remera, pantalon, short, buzo.
+-mujer: remera, calza, top, pantalon, buzo.
+-contacto: contacto, ayuda, cliente, atencion, horarios
+
+Descripcion
+sitio web para los fanaticos de la moda urbana con las mejores marcas y muchos estilos por explorar.
