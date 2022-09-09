@@ -1,17 +1,21 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? familia=Nunito:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
-/* familia fuente: 'Nunito', sans-serif;  familia de fuentes: 'Roboto', sans-serif; */
+.grid-categorie div {
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.788) 100%); }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif; }
+  font-family: "Nunito", sans-serif; }
 
 body {
   background-color: #f8f8f8; }
 
 .header {
-  background-color: white;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   left: 0;
@@ -20,11 +24,11 @@ body {
     padding: 0;
     margin: 0; }
     .header .navbar .navbar-one {
-      background-color: white;
+      background-color: #ffffff;
       width: 100%;
       padding: 0 1em; }
       .header .navbar .navbar-one a {
-        color: black;
+        color: #000100;
         font-size: 2.5em;
         width: 15vw;
         text-align: center;
@@ -35,7 +39,7 @@ body {
       .header .navbar .navbar-one input {
         border-radius: 1em;
         width: 100%;
-        background-color: #ebebeb;
+        background-color: #f8f8f8;
         margin: 0; }
         .header .navbar .navbar-one input:focus {
           background-color: #ebebeb;
@@ -46,12 +50,12 @@ body {
         text-align: end;
         padding-right: 1em; }
         .header .navbar .navbar-one .icon-nav i {
-          color: #313131;
+          color: #4C4C4C;
           padding: 0 0.6em;
           font-size: 1.2em; }
   .header .navbar-expand-lg .navbar-collapse {
     justify-content: center;
-    background-color: white; }
+    background-color: #ffffff; }
 
 /* Estrategia Mobile Last */
 @media (max-width: 991px) {
@@ -135,10 +139,7 @@ body {
   .grid-categorie div {
     width: 100%;
     height: 100%;
-    text-align: center;
     position: absolute;
-    border-radius: 5px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.788) 100%);
     transition: 0.5s; }
     .grid-categorie div:hover {
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.788) 100%); }

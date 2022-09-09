@@ -1,5 +1,5 @@
 .header {
-  background-color: white;
+  background-color: $white;
   position: sticky;
   top: 0;
   left: 0;
@@ -8,11 +8,11 @@
     padding: 0;
     margin: 0;
     .navbar-one {
-      background-color: white;
+      background-color: $white;
       width: 100%;
       padding: 0 1em;
       a {
-        color: black;
+        color: $black;
         font-size: 2.5em;
         width: 15vw;
         text-align: center;
@@ -25,7 +25,7 @@
       input {
         border-radius: 1em;
         width: 100%;
-        background-color: rgb(235, 235, 235);
+        background-color: $light-gray;
         margin: 0;
         &:focus {
           background-color: rgb(235, 235, 235);
@@ -38,7 +38,7 @@
         text-align: end;
         padding-right: 1em;
         i {
-          color: rgb(49, 49, 49);
+          color: $davys-gray;
           padding: 0 0.6em;
           font-size: 1.2em;
         }
@@ -48,7 +48,7 @@
   .navbar-expand-lg {
     .navbar-collapse {
       justify-content: center;
-      background-color: white;
+      background-color: $white;
     }
   }
 }
