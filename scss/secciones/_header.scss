@@ -25,11 +25,11 @@
       input {
         border-radius: 1em;
         width: 100%;
-        background-color: $light-gray;
+        background-color: $medium-gray;
         margin: 0;
         &:focus {
-          background-color: rgb(235, 235, 235);
-          border: 1px solid rgb(71, 71, 71);
+          background-color: $medium-gray;
+          border: 1px solid $davys-gray;
           box-shadow: none;
         }
       }
@@ -55,68 +55,76 @@
 
 /* Estrategia Mobile Last */
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   /* Tamaño mediano */
 
-  .navbar {
-    .navbar-one {
-      form {
-        width: 50vw;
-      }
-      .icon-nav {
-        width: 20vw;
-        i {
-          padding: 0 0.4em;
-          font-size: 1.2em;
+  .header {
+    .navbar {
+      .navbar-one {
+        form {
+          width: 50vw;
+        }
+        .icon-nav {
+          width: 20vw;
+          i {
+            padding: 0 0.4em;
+            font-size: 1.2em;
+          }
         }
       }
-    }
-    .navbar-two {
-      background-color: white;
-      .navbar-toggler {
-        border: white;
-        &:focus {
-          box-shadow: none;
+      .navbar-two {
+        background-color: white;
+        .navbar-toggler {
+          border: white;
+          &:focus {
+            box-shadow: none;
+          }
         }
       }
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Tamaño Mediano: Tablet */
-
-  .navbar-one {
-    a {
-      width: 20vw;
-      font-size: 2.2rem;
-    }
-    form {
-      width: 45vw;
-    }
-    .icon-nav {
-      width: 25vw;
+  .header {
+    .navbar {
+      .navbar-one {
+        a {
+          width: 20vw;
+          font-size: 2.2rem;
+        }
+        form {
+          width: 45vw;
+        }
+        .icon-nav {
+          width: 25vw;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 575px) {
   /* Tamaño Chico */
-
-  .navbar-one {
-    padding: 0 0.4em;
-    a {
-      width: 20vw;
-      font-size: 2rem;
-    }
-    form {
-      width: 38vw;
-    }
-    .icon-nav {
-      width: 27vw;
-      i {
+  .header {
+    .navbar {
+      .navbar-one {
         padding: 0 0.4em;
-        font-size: 1em;
+        a {
+          width: 20vw;
+          font-size: 2rem;
+        }
+        form {
+          width: 38vw;
+        }
+        .icon-nav {
+          width: 27vw;
+          i {
+            padding: 0 0.4em;
+            font-size: 1em;
+          }
+        }
       }
     }
   }
@@ -124,14 +132,17 @@
 
 @media (max-width: 424px) {
   /* Tamaño Extra Chico */
-
-  .navbar-one {
-    a {
-      width: 15vw;
-      font-size: 1.5rem;
-    }
-    .icon-nav {
-      width: 30vw;
+  .header {
+    .navbar {
+      .navbar-one {
+        a {
+          width: 15vw;
+          font-size: 1.5rem;
+        }
+        .icon-nav {
+          width: 30vw;
+        }
+      }
     }
   }
 }

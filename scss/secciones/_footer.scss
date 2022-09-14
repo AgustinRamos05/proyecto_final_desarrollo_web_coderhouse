@@ -29,10 +29,11 @@
 
 @media (max-width: 575px) {
   /* Tamaño Chico */
-
-  .footer-boxs {
-    div {
-      width: 45vw;
+  .footer {
+    .footer-boxs {
+      div {
+        width: 45vw;
+      }
     }
   }
 }

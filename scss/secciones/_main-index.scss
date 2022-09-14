@@ -98,13 +98,14 @@
       text-align: start;
       padding-bottom: 0;
       a {
-       @include estilo-btn (rgb(153, 157, 158), 80%);
+        @include estilo-btn(rgb(153, 157, 158), 80%);
         &:hover {
           background-color: black;
           transform: scale(1.1);
         }
         &:focus {
           background-color: black;
+          box-shadow: none;
         }
       }
       h5 {
@@ -163,7 +164,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Tamaño Mediano: Tablet */
 
   .banner-bg {
@@ -195,8 +196,10 @@
       font-size: 2rem;
     }
   }
-  .card {
-    width: 11.5rem;
+  .trends {
+    .card {
+      width: 11.5rem;
+    }
   }
   .form {
     width: 80vw;
@@ -212,8 +215,10 @@
       font-size: 1.7rem;
     }
   }
-  .card {
-    width: 10.2rem;
+  .trends {
+    .card {
+      width: 10.2rem;
+    }
   }
   .form {
     width: 90vw;
