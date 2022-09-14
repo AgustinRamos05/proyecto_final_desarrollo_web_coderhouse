@@ -53,6 +53,9 @@ body {
           color: #4C4C4C;
           padding: 0 0.6em;
           font-size: 1.2em; }
+    .header .navbar .navbar-two {
+      width: 100%;
+      padding: 0; }
   .header .navbar-expand-lg .navbar-collapse {
     justify-content: center;
     background-color: #ffffff; }
@@ -302,11 +305,13 @@ body {
     width: 45vw; } }
 
 .contact {
-  width: auto; }
+  width: auto;
+  margin: 2rem; }
 
 .form-contact {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  width: auto; }
+  width: auto;
+  margin: 0 2rem; }
   .form-contact h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 600; }
