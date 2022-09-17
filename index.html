@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Style, indumentaria, urbano, accesorios, moda">
-  <meta name="description" content="sitio web para los fanaticos de la moda urbana con las mejores marcas y muchos estilos por explorar.">
+  <meta name="description"
+    content="sitio web para los fanaticos de la moda urbana con las mejores marcas y muchos estilos por explorar.">
   <link rel="shortcut icon" href="./img/letter-s.png">
   <!-- Link Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,12 +25,15 @@
     <nav class="navbar bg-light">
       <div class="container-fluid navbar-one">
         <a class="navbar-brand" href="./index.html">
-          <h1>STYLE</h1>
+          <img src="./img/logo-style-PhotoRoom.png" class="navbar-one__logo" alt="Logo STYLE">
         </a>
-        <form class="d-flex" role="search">
+        <form class="d-flex navbar-one__form" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass "></i>
+          </div>
         </form>
-        <div class="icon-nav">
+        <div class="navbar-one__icon">
           <i class="fa-solid fa-user"></i>
           <i class="fa-solid fa-heart"></i>
           <i class="fa-solid fa-bag-shopping"></i>
@@ -45,11 +49,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item navbar-two__item">
               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item dropdown navbar-two__item navbar-two__dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Indumentaria
               </a>
@@ -59,7 +63,7 @@
                 <li><a class="dropdown-item" href="./pages/accesorios.html">Accesorios</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navbar-two__item">
               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
           </ul>
