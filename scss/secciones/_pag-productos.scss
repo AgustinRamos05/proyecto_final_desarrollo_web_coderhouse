@@ -9,11 +9,17 @@
     "aside products products products";
 }
 
+.unseen-title{
+  color: $light-gray;
+  font-size: 1rem;
+}
+
 //Aside
 
 .aside {
   grid-area: aside;
   height: auto;
+  width: 15rem;
   position: relative; 
   .filter{
     display: none;
@@ -64,7 +70,7 @@
   .products-title {
     font-size: 1.5rem;
     padding: 0.5rem;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   }
   .card {
     width: 14rem;
@@ -84,18 +90,18 @@
       text-align: start;
       padding-bottom: 0;
       a {
-        @include estilo-btn(rgb(153, 157, 158), 80%);
+        @include estilo-btn($gray, 80%);
         &:hover {
-          background-color: black;
+          background-color: $orange;
           transform: scale(1.1);
         }
         &:focus {
-          background-color: black;
+          background-color: $orange;
           box-shadow: none;
         }
       }
       h5 {
-        font-weight: 200;
+        font-weight: 300;
         height: 3rem;
         overflow: hidden;
         display: -webkit-box;
@@ -129,6 +135,7 @@
   }
 
   .aside{
+    width: 100%;
     .filter{
       display: inline;
     }

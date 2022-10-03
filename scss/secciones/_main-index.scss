@@ -1,5 +1,5 @@
 .main {
-  .unseen-title{
+  .unseen-title {
     color: $light-gray;
     font-size: 1rem;
   }
@@ -102,13 +102,13 @@
         text-align: start;
         padding-bottom: 0;
         a {
-          @include estilo-btn($orange, 80%);
+          @include estilo-btn($gray, 80%);
           &:hover {
-            background-color: $black;
+            background-color: $orange;
             transform: scale(1.1);
           }
           &:focus {
-            background-color: $black;
+            background-color: $orange;
             box-shadow: none;
           }
         }
@@ -144,7 +144,7 @@
       font-weight: 600;
     }
     p {
-      font-weight: 200;
+      font-weight: 300;
     }
     .input-email {
       border-radius: 20px;
@@ -170,63 +170,73 @@
   }
 }
 
+@media (max-width: 991px){
+  .trends{
+    margin-left: 0.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   /* Tamaño Mediano: Tablet */
 
-  .banner-bg {
-    display: none;
-  }
-  .banner-sm {
-    display: inline;
-    width: 100%;
-  }
-  .grid-categorie {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 0.8em;
-    grid-template-areas:
-      "categorie-mujer categorie-hombre"
-      "categorie-accesorios categorie-accesorios";
-    h2 {
-      font-size: 2.5rem;
+  .main {
+    .banner-bg {
+      display: none;
+    }
+    .banner-sm {
+      display: inline;
+      width: 100%;
+    }
+    .grid-categorie {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.8em;
+      grid-template-areas:
+        "categorie-mujer categorie-hombre"
+        "categorie-accesorios categorie-accesorios";
+      h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
 
 @media (max-width: 575px) {
   /* Tamaño Chico */
-
-  .grid-categorie {
-    h2 {
-      font-size: 2rem;
+  .main {
+    .grid-categorie {
+      h2 {
+        font-size: 2rem;
+      }
     }
-  }
-  .trends {
-    .card {
-      width: 11.5rem;
+    .trends {
+      .card {
+        width: 11.5rem;
+      }
     }
-  }
-  .form {
-    width: 80vw;
+    .form {
+      width: 80vw;
+    }
   }
 }
 
 @media (max-width: 424px) {
   /* Tamaño Extra Chico */
-
-  .grid-categorie {
-    gap: 0.5rem;
-    h2 {
-      font-size: 1.7rem;
+  .main {
+    .grid-categorie {
+      gap: 0.5rem;
+      h2 {
+        font-size: 1.7rem;
+      }
     }
-  }
-  .trends {
-    .card {
-      width: 10.2rem;
+    .trends {
+      .card {
+        width: 10.2rem;
+      }
     }
-  }
-  .form {
-    width: 90vw;
+    .form {
+      width: 90vw;
+    }
   }
 }

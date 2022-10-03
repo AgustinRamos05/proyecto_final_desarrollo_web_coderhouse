@@ -120,7 +120,7 @@
 
 /* Estrategia Mobile Last */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   /* Tamaño mediano */
 
   .header {
@@ -163,10 +163,9 @@
         }
       }
       &__item {
-        background-color: $medium-gray;
+        background-color: $gray;
         margin: 3px 0;
         .nav-link {
-          color: $black;
           &::after {
             display: none;
           }
@@ -174,10 +173,12 @@
       }
       &__dropdown {
         .dropdown-menu {
-          .dropdown-item {
+          li {
             background-color: $white;
             width: 100%;
-            color: $orange;
+            .dropdown-item {
+              color: $orange;
+            }
           }
         }
       }
@@ -201,6 +202,7 @@
         }
         &__icon {
           width: 25vw;
+          margin-right: 0.6rem;
         }
       }
     }
@@ -246,6 +248,13 @@
         &__logo {
           width: 25vw;
           height: 3rem;
+        }
+        &__form {
+          width: 45vw;
+          .search-icon {
+            left: 83%;
+            top: 15%;
+          }
         }
         &__icon {
           width: 25vw;
